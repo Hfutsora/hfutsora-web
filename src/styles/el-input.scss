@@ -1,0 +1,9 @@
+@import '~element-ui/packages/theme-chalk/src/mixins/mixins';
+@import '~element-ui/packages/theme-chalk/src/mixins/utils';
+
+@include b(form-item) {
+  @include e(label) {
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+  }
+}

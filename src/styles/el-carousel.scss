@@ -1,0 +1,11 @@
+@import '~element-ui/packages/theme-chalk/src/mixins/mixins';
+@import '~element-ui/packages/theme-chalk/src/mixins/utils';
+
+@include b(carousel) {
+  @include e(button) {
+    background: $--color-primary;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+  }
+}

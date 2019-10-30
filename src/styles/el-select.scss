@@ -1,0 +1,16 @@
+@import '~element-ui/packages/theme-chalk/src/mixins/mixins';
+@import '~element-ui/packages/theme-chalk/src/mixins/utils';
+
+@include b(select) {
+  .el-tag {
+    background-color: $--color-primary;
+    color: white;
+    &__close.el-icon-close {
+      background-color: transparent;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

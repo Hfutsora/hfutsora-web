@@ -1,0 +1,31 @@
+@import '~element-ui/packages/theme-chalk/src/mixins/mixins';
+@import '~element-ui/packages/theme-chalk/src/mixins/utils';
+
+@include b(dialog) {
+  background: none;
+  @include e(header) {
+    padding: 0;
+  }
+  @include e(headerbtn) {
+    top: 0;
+    right: -5px;
+    font-size: 20px;
+    color: red;
+    .el-dialog__close {
+      position: absolute;
+      z-index: 99;
+      color: white;
+    }
+  }
+  @include e(body) {
+    padding: 0;
+  }
+  @include m(center) {
+    @include e(body) {
+      padding: 0;
+    }
+  }
+  @include e(footer) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,12 @@
+@import '~element-ui/packages/theme-chalk/src/mixins/mixins';
+@import '~element-ui/packages/theme-chalk/src/mixins/utils';
+
+@include b(table) {
+  overflow: visible;
+  .cell {
+    overflow: visible;
+  }
+  @include e(body-wrapper) {
+    overflow: visible;
+  }
+}

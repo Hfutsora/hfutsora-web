@@ -1,0 +1,265 @@
+{
+  "id": 27,
+  "score": 63,
+  "total": 100,
+  "content": "项目虽然存在问题，但具备良好的潜力，投资人可以关注此项目，通过短期的改进和调整后，再决定是否签订投资意向书和尽调。",
+  "steps": [
+    {
+      "id": 130,
+      "name": "company",
+      "sid": "B01",
+      "description": "公司架构",
+      "score": 8,
+      "total": 10,
+      "content": "公司架构合理。",
+      "addition": [
+        {
+          "label": "股权架构",
+          "score": 2,
+          "total": 4,
+          "content": "公司股权架构存在一定问题，需要进行调整。",
+          "formalAnalysis": {}
+        },
+        {
+          "label": "现金流",
+          "score": 3,
+          "total": 3,
+          "content": "公司现金流状况良好。",
+          "formalAnalysis": {}
+        },
+        {
+          "label": "债务",
+          "score": 3,
+          "total": 3,
+          "content": "公司无债务问题。",
+          "formalAnalysis": {}
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "name": "originator",
+      "sid": "B02",
+      "description": "创始人评分",
+      "score": 20,
+      "total": 35,
+      "content": "创始人的能力和相关经验一般，需要提升。",
+      "addition": [
+        {
+          "label": "基本素质",
+          "score": 2,
+          "total": 5,
+          "content": "创始人基本素质较好",
+          "formalAnalysis": {
+            "strong": ["985、211大学本科学历", "海外学习、工作经验"]
+          }
+        },
+        {
+          "label": "基本能力",
+          "score": 3,
+          "total": 5,
+          "content": "创始人基本能力较好",
+          "formalAnalysis": {
+            "weak": ["语言沟通能力", "文字表达能力"],
+            "strong": ["学习能力", "理解能力", "逻辑分析能力"]
+          }
+        },
+        {
+          "label": "工作经验",
+          "score": 1,
+          "total": 6,
+          "content": "相关行业经验太少，与现有创业项目管理要求存在较大差距。",
+          "formalAnalysis": {
+            "weak": ["欠缺行业经验", "欠缺互联网等新兴科技行业经验"],
+            "strong": ["具备一定工作经验"]
+          }
+        },
+        {
+          "label": "创业能力",
+          "score": 3,
+          "total": 5,
+          "content": "具备一定的创业经验和能力，但存在一些不足，需要进行辅导和培训。",
+          "formalAnalysis": {
+            "weak": ["创业公司管理经验"],
+            "strong": ["创业公司工作经验", "理性创业精神", "务实精神"]
+          }
+        },
+        {
+          "label": "管理能力",
+          "score": 7,
+          "total": 8,
+          "content": "具备丰富的企业管理经验和良好的管理能力。",
+          "formalAnalysis": {
+            "weak": ["具备合理的融资计划"],
+            "strong": [
+              "具备公司全面管理经历",
+              "具备公司总监以上工作经历",
+              "具备合理的团队建设计划",
+              "是否具备合理的薪资和激励制度",
+              "具备合理的运营计划"
+            ]
+          }
+        },
+        {
+          "label": "特长优势",
+          "score": 4,
+          "total": 6,
+          "content": "具备明显的优势，可以帮助创业项目快速发展。",
+          "formalAnalysis": {
+            "strong": [
+              "具备5年以上技术研发、科技研究工作经验",
+              "具备5年以上市场管理经验",
+              "是相关行业内专家"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "name": "team",
+      "sid": "B03",
+      "description": "团队评分",
+      "score": 14,
+      "total": 20,
+      "content": "团队整体构成较好，但需要进行补充。",
+      "addition": [
+        {
+          "label": "整体能力",
+          "score": 10,
+          "total": 12,
+          "content": "团队整体能力出色",
+          "formalAnalysis": {
+            "weak": ["团队技术能力"],
+            "strong": [
+              "管理能力",
+              "团队产品能力",
+              "团队财务能力",
+              "团队人事行政能力",
+              "管理能力"
+            ]
+          }
+        },
+        {
+          "label": "完整性",
+          "score": 2,
+          "total": 4,
+          "content": "团队在某些关键岗位有欠缺，需要逐步完善。",
+          "formalAnalysis": {}
+        },
+        {
+          "label": "稳定性",
+          "score": 2,
+          "total": 4,
+          "content": "团队存在一些不稳定因素，需要通过股权（期权）等激励制度，来稳定核心团队。",
+          "formalAnalysis": {}
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "name": "production",
+      "sid": "B04",
+      "description": "产品评分",
+      "score": 9,
+      "total": 20,
+      "content": "产品方向存在一定问题，需要深入进行行业、市场、目标客户等分析工作，并进行相应的调整。",
+      "addition": [
+        {
+          "label": "行业分析",
+          "score": 6,
+          "total": 8,
+          "content": "对行业的理解深刻，对行业发展趋势判断准确。",
+          "formalAnalysis": {}
+        },
+        {
+          "label": "产品分析",
+          "score": 3,
+          "total": 6,
+          "content": "产品方向比较正确，需求进行优化和完善。",
+          "formalAnalysis": {}
+        },
+        {
+          "label": "竞品分析 ",
+          "score": 0,
+          "total": 6,
+          "content": "对竞品了解不足，需认真进行竞品分析。",
+          "formalAnalysis": {}
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "name": "business",
+      "sid": "B05",
+      "description": "运营评估",
+      "score": 12,
+      "total": 15,
+      "content": "项目整体运营规划和节奏比较合理，保持此节奏稳步发展。.",
+      "addition": [
+        {
+          "label": "收入",
+          "score": 3,
+          "total": 3,
+          "content": "收入状况良好。",
+          "formalAnalysis": {}
+        },
+        {
+          "label": "成本",
+          "score": 3,
+          "total": 3,
+          "content": "成本控制良好。",
+          "formalAnalysis": {}
+        },
+        {
+          "label": "战略规划 ",
+          "score": 0,
+          "total": 3,
+          "content": "战略规划混乱，需要进行梳理。",
+          "formalAnalysis": {}
+        },
+        {
+          "label": "运营计划 ",
+          "score": 2,
+          "total": 2,
+          "content": "运营计划明确、合理，具备可操作性。",
+          "formalAnalysis": {}
+        },
+        {
+          "label": "资金使用计划 ",
+          "score": 2,
+          "total": 2,
+          "content": "资金使用计划明确、合理，具备可操作性。",
+          "formalAnalysis": {}
+        },
+        {
+          "label": "融资计划 ",
+          "score": 2,
+          "total": 2,
+          "content": "融资计划明确、合理。",
+          "formalAnalysis": {}
+        }
+      ]
+    }
+  ],
+  "artificial": [
+    {
+      "id": "B0601",
+      "label": "项目评分",
+      "type": "input",
+      "content": [{ "value": "9" }]
+    },
+    {
+      "id": "B0604",
+      "label": "项目分析",
+      "type": "textarea",
+      "content": [{ "value": "项目分析结果" }]
+    },
+    {
+      "id": "B0605",
+      "label": "投资策略",
+      "type": "textarea",
+      "content": [{ "value": "投资策略" }]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+@import './element-variables.scss';
+@import '~element-ui/packages/theme-chalk/src/mixins/mixins';
+@import '~element-ui/packages/theme-chalk/src/mixins/utils';
+
+@include b(pagination) {
+  button {
+    border: none;
+    padding: 0 6px;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 50px;
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: transparent;
+      color: white;
+    }
+  }
+  .btn-prev,
+  .btn-next {
+    background: url('~@/assets/package/icon_prev_bg.png') no-repeat;
+    background-size: 40px;
+    cursor: pointer;
+    margin: 0;
+    background-color: transparent;
+  }
+  .btn-prev {
+    padding-right: 12px;
+    .el-icon {
+      display: block;
+      font-size: 10px;
+      font-weight: bold;
+      margin-left: 8px;
+      color: white;
+      margin-bottom: 21px;
+    }
+  }
+
+  .btn-next {
+    padding-left: 12px;
+    .el-icon {
+      display: block;
+      font-size: 10px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 21px;
+    }
+  }
+}
+@include b(pager) {
+  li {
+    background: transparent;
+  }
+}

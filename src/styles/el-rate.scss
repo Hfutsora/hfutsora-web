@@ -1,0 +1,9 @@
+@import '~element-ui/packages/theme-chalk/src/mixins/mixins';
+@import '~element-ui/packages/theme-chalk/src/mixins/utils';
+
+@include b(rate) {
+  @include e(icon) {
+    font-size: 25px;
+    margin-right: 7px;
+  }
+}

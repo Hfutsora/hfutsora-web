@@ -1,0 +1,30 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+$--color-primary: #53c398;
+$--color-white: #FFFFFF !default;
+
+
+/* icon font path, required */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+// checkbox 选中样式修改
+$--checkbox-checked-icon-color: $--color-primary;
+$--checkbox-checked-background-color: $--color-white;
+
+// radio 选中样式修改
+$--radio-checked-icon-color: $--color-white;
+
+// input 样式修改
+$--input-background-color: #f5f5f5;
+$--input-placeholder-color: rgb(153, 153, 153);
+
+// tag 样式修改
+$--tag-info-fill: $--color-primary;
+
+// 修改carousel样式
+$--carousel-arrow-hover-background: $--color-primary;
+
+@import "~element-ui/packages/theme-chalk/src/index";

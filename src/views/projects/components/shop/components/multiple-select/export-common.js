@@ -1,0 +1,80 @@
+// eslint-disable-next-line no-unused-vars
+const exportList = [
+  '订单信息',
+  '订单号',
+  '订单状态',
+  '订单应收金额',
+  '订单实付金额',
+  '时间信息',
+  '下单时间',
+  '付款时间',
+  '成交时间',
+  '收货地址',
+  '收货人省份',
+  '收货人城市',
+  '详细收货地址',
+  '收货人信息',
+  '收货人姓名',
+  '收货人联系方式',
+  '买家信息',
+  '买家姓名',
+  '买家手机号',
+  '买家备注',
+  '商品信息',
+  '商品名称',
+  '商品应收金额',
+  '商品实付金额',
+  '评价信息',
+  '评价时间',
+  '买家评价',
+  '卖家评价',
+  '退款信息',
+  '退款时间',
+  '商品退款金额',
+];
+
+export const exportMap = [{
+  title: '商品信息',
+  children: ['商品名称', '商品数量', '商品应收金额', '商品实付金额'],
+}, {
+  title: '订单信息',
+  children: ['订单号', '订单状态', '订单应收金额', '订单实付金额'],
+}, {
+  title: '时间信息',
+  children: ['下单时间', '付款时间', '成交时间'],
+}, {
+  title: '收货地址',
+  children: ['收货人省份', '收货人城市', '详细收货地址'],
+}, {
+  title: '收货人信息',
+  children: ['收货人姓名', '收货人联系方式'],
+}, {
+  title: '买家信息',
+  children: ['买家姓名', '买家手机号'],
+}, {
+  title: '退款信息',
+  children: ['退款时间', '商品退款金额'],
+}];
+
+export const exportZhMap = {
+  商品名称: 'commodityName',
+  商品数量: 'commodityNumber',
+  商品应收金额: 'totalMoney',
+  商品实付金额: 'finalMoney',
+  订单号: 'orderId',
+  订单状态: 'orderStatus',
+  订单应收金额: 'orderTotalMoney',
+  订单实付金额: 'orderFinalMoney',
+  下单时间: 'orderTime',
+  付款时间: 'payTime',
+  成交时间: 'finishTime',
+  收货人省份: 'receiverProvince',
+  收货人城市: 'receiverCity',
+  收货人姓名: 'receiverName',
+  收货人联系方式: 'receiverTelePhone',
+  详细收货信息: 'receiverDetailInfo',
+  买家姓名: 'buyerName',
+  买家手机号: 'buyerTelePhone',
+  退款时间: 'refundTime',
+  商品退款金额: 'refundMoney',
+};

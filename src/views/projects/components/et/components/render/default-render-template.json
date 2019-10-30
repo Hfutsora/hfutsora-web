@@ -1,0 +1,358 @@
+[
+  {
+    "id": "C0101",
+    "label": "项目概况",
+    "type": "form",
+    "content": [
+      {
+        "label": "企业简介",
+        "value": "C010101",
+        "type": "textarea",
+        "schema": { "type": "text", "minLength": 0, "maxLength": 250 }
+      },
+      {
+        "label": "股权结构",
+        "type": "table",
+        "value": "C010102",
+        "addAble": true,
+        "contents": [
+          {
+            "label": "股东姓名",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 2, "maxLength": 10 }
+          },
+          {
+            "label": "持股比例",
+            "type": "input",
+            "schema": { "type": "number", "min": 0, "max": 100 }
+          }
+        ]
+      },
+      {
+        "label": "期权池",
+        "value": "C010103",
+        "type": "form",
+        "contents": [
+          {
+            "label": "期权池设置",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 10 }
+          },
+          {
+            "label": "代持人",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 10 }
+          },
+          {
+            "type": "table",
+            "addAble": true,
+            "contents": [
+              { "label": "确权时间", "type": "date" },
+              {
+                "label": "确权比例",
+                "type": "input",
+                "schema": { "type": "number", "min": 0, "max": 100 }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "C0102",
+    "label": "企业简介",
+    "type": "form",
+    "content": [
+      {
+        "label": "创始人介绍",
+        "value": "C010201",
+        "type": "form",
+        "contents": [
+          {
+            "label": "姓名",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 10 }
+          },
+          {
+            "label": "性别",
+            "type": "radio",
+            "options": [{ "label": "男" }, { "label": "女" }]
+          },
+          {
+            "label": "出生年月",
+            "type": "date",
+            "schema": { "type": "date" }
+          },
+          {
+            "label": "学历",
+            "type": "dropdown-select",
+            "options": [
+              { "label": "无" },
+              { "label": "小学" },
+              { "label": "初中" },
+              { "label": "高中及中专" },
+              { "label": "大学及高专" },
+              { "label": "硕士" },
+              { "label": "博士" }
+            ]
+          },
+          {
+            "label": "联系电话",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 13 }
+          },
+          {
+            "label": "毕业院校",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 10 }
+          },
+          {
+            "label": "工作经历",
+            "type": "textarea",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+          },
+          {
+            "label": "个人介绍",
+            "type": "textarea",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+          }
+        ]
+      },
+      {
+        "label": "核心成员",
+        "value": "C010202",
+        "type": "form",
+        "addAble": true,
+        "contents": [
+          {
+            "label": "姓名",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 10 }
+          },
+          {
+            "label": "性别",
+            "type": "radio",
+            "options": [{ "label": "男" }, { "label": "女" }]
+          },
+          {
+            "label": "出生年月",
+            "type": "date",
+            "schema": { "type": "date" }
+          },
+          {
+            "label": "学历",
+            "type": "dropdown-select",
+            "options": [
+              { "label": "无" },
+              { "label": "小学" },
+              { "label": "初中" },
+              { "label": "高中及中专" },
+              { "label": "大学及高专" },
+              { "label": "硕士" },
+              { "label": "博士" }
+            ]
+          },
+          {
+            "label": "联系电话",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 13 }
+          },
+          {
+            "label": "毕业院校",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 10 }
+          },
+          {
+            "label": "工作经历",
+            "type": "textarea",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+          },
+          {
+            "label": "个人介绍",
+            "type": "textarea",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+          }
+        ]
+      },
+      {
+        "label": "团队SWOT分析",
+        "value": "C010203",
+        "type": "form",
+        "contents": [
+          {
+            "label": "对团队进行详细的SWOT分析，便于找出团队的优势，劣势，核心竞争力之所在",
+            "type": "read-only"
+          },
+          {
+            "label": "团队优势",
+            "type": "textarea",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+          },
+          {
+            "label": "团队劣势",
+            "type": "textarea",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+          },
+          {
+            "label": "团队核心竞争力",
+            "type": "textarea",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+          },
+          {
+            "label": "企业威胁",
+            "type": "textarea",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+          }
+        ]
+      },
+      {
+        "label": "团队独特性分析",
+        "value": "C010204",
+        "type": "form",
+        "contents": [
+          {
+            "label": "分析团队在行业资源、行业技术、市场营销、融资方面的能力分布情况",
+            "type": "read-only"
+          },
+          {
+            "label": "行业资源",
+            "type": "form-with-radio",
+            "contents": [
+              {
+                "type": "textarea",
+                "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+              },
+              {
+                "label": "特征水平",
+                "type": "radio",
+                "options": [
+                  { "label": "优" },
+                  { "label": "良" },
+                  { "label": "中" },
+                  { "label": "差" }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "行业技术",
+            "type": "form-with-radio",
+            "contents": [
+              {
+                "type": "textarea",
+                "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+              },
+              {
+                "label": "特征水平",
+                "type": "radio",
+                "options": [
+                  { "label": "优" },
+                  { "label": "良" },
+                  { "label": "中" },
+                  { "label": "差" }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "市场营销",
+            "type": "form-with-radio",
+            "contents": [
+              {
+                "type": "textarea",
+                "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+              },
+              {
+                "label": "特征水平",
+                "type": "radio",
+                "options": [
+                  { "label": "优" },
+                  { "label": "良" },
+                  { "label": "中" },
+                  { "label": "差" }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "融资方面",
+            "type": "form-with-radio",
+            "contents": [
+              {
+                "type": "textarea",
+                "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+              },
+              {
+                "label": "特征水平",
+                "type": "radio",
+                "options": [
+                  { "label": "优" },
+                  { "label": "良" },
+                  { "label": "中" },
+                  { "label": "差" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "C0103",
+    "label": "团队建设情况",
+    "type": "form",
+    "content": [
+      {
+        "label": "人才引进计划",
+        "value": "C010301",
+        "type": "textarea",
+        "schema": { "type": "text", "minLength": 0, "maxLength": 255 }
+      },
+      {
+        "label": "董事会成员",
+        "value": "C010302",
+        "type": "table",
+        "addAble": true,
+        "contents": [
+          {
+            "label": "成员名",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 10 }
+          },
+          {
+            "label": "职务",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 10 }
+          }
+        ]
+      },
+      {
+        "label": "总经理",
+        "value": "C010303",
+        "type": "input",
+        "schema": { "type": "text", "minLength": 0, "maxLength": 10 }
+      },
+      { "label": "组织架构", "value": "C010304", "type": "image-upload" },
+      {
+        "label": "部门人数",
+        "value": "C010305",
+        "type": "table",
+        "addAble": true,
+        "contents": [
+          {
+            "label": "部门名称",
+            "type": "input",
+            "schema": { "type": "text", "minLength": 0, "maxLength": 20 }
+          },
+          {
+            "label": "部门人数",
+            "type": "input",
+            "schema": { "type": "number", "min": 0, "max": 20 }
+          }
+        ]
+      }
+    ]
+  }
+]

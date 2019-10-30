@@ -1,0 +1,22 @@
+@import '~element-ui/packages/theme-chalk/src/mixins/mixins';
+@import '~element-ui/packages/theme-chalk/src/mixins/utils';
+
+@include b(breadcrumb) {
+  @include e(item) {
+    float: left;
+
+    @include e(inner) {
+      color: $--color-primary;
+
+      &.is-link,
+      & a {
+        font-weight: normal;
+        color: $--color-primary;
+
+        &:hover {
+          color: $--color-primary;
+        }
+      }
+    }
+  }
+}

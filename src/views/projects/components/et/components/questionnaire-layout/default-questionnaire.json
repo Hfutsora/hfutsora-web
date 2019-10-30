@@ -1,0 +1,31 @@
+[
+  {
+    "id": "B0101",
+    "label": "股权结构状况",
+    "type": "checkbox",
+    "content": [
+      { "value": "B010101", "label": "创始人股权>=60&<=85" },
+      { "value": "B010102", "label": "早期投资人股权<=20" },
+      { "value": "B010103", "label": "期权池>=5&<=15" }
+    ]
+  },
+  {
+    "id": "B0102",
+    "label": "公司现金流状况",
+    "type": "radio",
+    "content": [
+      { "value": "B010201", "label": "良好" },
+      { "value": "B010202", "label": "紧张" },
+      { "value": "B010203", "label": "无现金流" }
+    ]
+  },
+  {
+    "id": "B0103",
+    "label": "公司是否有债务",
+    "type": "radio",
+    "content": [
+      { "value": "B010301", "label": "无债务" },
+      { "value": "B010302", "label": "有债务" }
+    ]
+  }
+]
