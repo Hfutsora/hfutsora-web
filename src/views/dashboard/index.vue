@@ -7,6 +7,11 @@
         <slot name="message" class="message-container"></slot>
       </div>
     </div>
+
+    <div class="git flex-vertical-center" @click="linkToGit">
+      <img src="@/assets/git.png" class="pic" alt="github" />
+      <div class="content">GitHub</div>
+    </div>
   </div>
 </template>
 
@@ -33,6 +38,11 @@ export default {
         });
       });
     });
+  },
+  methods: {
+    linkToGit() {
+      window.open('https://github.com/Hfutsora/hfutsora-web');
+    },
   },
 };
 </script>
@@ -98,5 +108,26 @@ export default {
 .message-container {
   // position: absolute;
   z-index: 99;
+}
+
+.git {
+  position: fixed;
+  z-index: 9999;
+  left: 24px;
+  cursor: pointer;
+  .content {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .pic {
+    width: 60px;
+    height: 60px;
+  }
+
+  &:hover {
+    filter: brightness(1.5);
+  }
 }
 </style>
