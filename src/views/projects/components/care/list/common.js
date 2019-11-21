@@ -12,14 +12,6 @@ const titles = [
     label: '性别',
   },
   {
-    prop: 'birthday',
-    label: '出生年月',
-  },
-  {
-    prop: 'age',
-    label: '年龄',
-  },
-  {
     prop: 'livingState',
     label: '居住状态',
   },

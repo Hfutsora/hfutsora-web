@@ -11,9 +11,18 @@
     </div>
     <div class="flex-center">
       <el-form size="medium" class="dialog-form" label-position="left" label-width="100px">
-        <!-- <el-form-item label="姓名" :error="$err($v.form.name)">
+        <el-form-item label="姓名" :error="$err($v.form.name)">
           <el-input style="width: 100%;" placeholder="请输入姓名" v-model="$v.form.name.$model"></el-input>
-        </el-form-item> -->
+        </el-form-item>
+
+        <el-form-item label="出生年月" :error="$err($v.form.birthday)">
+          <el-date-picker
+            style="width: 100%;"
+            v-model="$v.form.birthday.$model"
+            type="date"
+            placeholder="选择日期">
+          </el-date-picker>
+        </el-form-item>
       </el-form>
     </div>
 
@@ -47,6 +56,9 @@ export default {
       name: {
         required,
       },
+      birthday: {
+        required,
+      },
     },
   },
   errors: {
@@ -56,17 +68,11 @@ export default {
     return {
       form: {
         name: '',
+        birthday: '',
       },
       loading: false,
     };
   },
-  // watch: {
-  //   firstDialogVisible(visible) {
-  //     if (visible) {
-  //       this.form.name = this.editRow.name;
-  //     }
-  //   },
-  // },
   methods: {
     close() {
       this.$emit('update:dialogVisible', false);
@@ -85,18 +91,12 @@ export default {
     async handleClick() {
       this.$v.form.$touch();
 
-      if (this.$v.form.$invalid) {
-        //
+      if (!this.$v.form.$invalid) {
+        this.$emit('append-elder', JSON.parse(JSON.stringify(this.form)));
+        this.form.name = '';
+        this.form.birthday = '';
+        this.$v.$reset();
       }
-
-
-      // const parameters = {
-      //   body: {
-      //     name: this.form.name,
-      //   },
-      //   path: {},
-      // };
-      // this.$emit('handle-first-classification', parameters, this.type);
     },
   },
 };

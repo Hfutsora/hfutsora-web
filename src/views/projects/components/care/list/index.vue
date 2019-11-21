@@ -86,6 +86,12 @@
           :label="title.label"
           :key="title.label">
         </el-table-column>
+
+        <el-table-column label="出生年月">
+          <template slot-scope="{row}">
+            <div>{{row.birthday | dateFilter}}</div>
+          </template>
+        </el-table-column>
         <el-table-column>
           <template slot-scope="scope">
             <el-button type="danger" size="small" @click="deleteElderRow(scope)">删除</el-button>
@@ -94,7 +100,7 @@
       </data-tables-server>
     </div>
 
-    <elder-append-dialog :dialogVisible.sync="dialogVisible" :type="editType" :editRow="editRow"></elder-append-dialog>
+    <elder-append-dialog :dialogVisible.sync="dialogVisible" :type="editType" :editRow="editRow" @append-elder="appendElder"></elder-append-dialog>
   </div>
 </template>
 
@@ -153,11 +159,10 @@ export default {
   methods: {
     async init() {
       this.data = [{
-        sid: 2015,
+        sid: 1,
         name: 'hfutsora',
         gender: '男',
-        birthday: '1996-11-10',
-        age: 22,
+        birthday: '2010-02-01T16:00:00.000Z',
         livingState: '独居',
         address: '合肥',
       }];
@@ -198,6 +203,21 @@ export default {
       //   type: 'success',
       //   message: '添加老人成功',
       // });
+    },
+    appendElder(form) {
+      console.log(this.data, this.data.length);
+
+      this.$set(this.data, this.data.length, {
+        sid: this.data.length - 1 >= 0 && this.data[this.data.length - 1] ? this.data[this.data.length - 1].sid + 1 : 1,
+        name: form.name || 'default',
+        gender: '',
+        birthday: form.birthday || 'default',
+        age: '',
+        livingState: '',
+        address: '',
+      });
+
+      this.dialogVisible = false;
     },
     async  deleteElderRow(scope) {
       console.log(scope);
