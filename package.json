@@ -24,7 +24,7 @@
     "nprogress": "^0.2.0",
     "scss": "^0.2.4",
     "store": "^2.0.12",
-    "three": "^0.125.0",
+    "three": "^0.137.0",
     "three-obj-mtl-loader": "^1.0.3",
     "three-orbitcontrols": "^2.108.1",
     "uuid": "^3.3.3",
